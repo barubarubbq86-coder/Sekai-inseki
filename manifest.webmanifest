@@ -1,0 +1,15 @@
+{
+  "name": "世界in石",
+  "short_name": "世界in石",
+  "description": "世界地図に隕石を落とす子ども向け実験ゲーム",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "landscape",
+  "background_color": "#07101c",
+  "theme_color": "#08111e",
+  "icons": [
+    {"src":"icon-192.png","sizes":"192x192","type":"image/png","purpose":"any maskable"},
+    {"src":"icon-512.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}
+  ]
+}
