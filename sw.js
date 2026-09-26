@@ -1,4 +1,4 @@
-const CACHE_NAME='sekai-in-ishi-v5';
+const CACHE_NAME='sekai-in-ishi-v6';
 const APP_FILES=['./','./index.html','./sekai-in-ishi-demo.html','./manifest.webmanifest','./icon.svg','./icon-192.png','./icon-512.png','./爆発1.mp3','./Quo_Vadis.mp3'];
 self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE_NAME).then(cache=>cache.addAll(APP_FILES)).then(()=>self.skipWaiting()))});
 self.addEventListener('activate',event=>{event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE_NAME).map(k=>caches.delete(k)))).then(()=>self.clients.claim()))});
